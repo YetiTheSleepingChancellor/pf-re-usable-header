@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+}
+
+h1, h2, p, a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu-toggle {
+    background-color: #333;
+    padding: 5px;
+    border: none;
+}
+
+.nav-lists, .download {
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#menu-btn .active {
+    display: block;
+}
+
+#close-btn {
+    display: none;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.active {
+    display: block;
+}
