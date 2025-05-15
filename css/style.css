@@ -20,6 +20,8 @@ a {
     color: #333;
 }
 
+/* for button */
+
 .btn {
     border: none;
     padding: 5px 10px;
@@ -29,7 +31,16 @@ a {
 }
 
 .btn:hover {
-    background-color: #f4f4f4;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-icon {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
 /* initial setup for elements */
@@ -39,7 +50,7 @@ a {
 
 
 header {
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,6 +97,21 @@ header {
     min-width: 200px;
 }
 
+/* hover effects for the nav links */
+
+#desktop-active {
+    color: #333;
+}
+
+.desktop-nav-link {
+    color: grey; /* or your default color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.desktop-nav-link:hover {
+    color: #333; /* hover effect just for nav links */
+}
 
 
 @media (min-width: 768px) {
