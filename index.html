@@ -4,59 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Portfolio header 1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>LOGO</h1>
 
-        <ul class="nav-lists" id="nav-lists">
+        <ul class="desktop-nav-lists">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">My Journey</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a class="btn" href="docs/SandipTamang-Front-End-Developer.pdf">Download CV</a></li>
         </ul>
 
-        <button class="download">Download CV</button>
+        <button class="desktop-download btn">Download CV</button>
 
-        <button id="menu-btn">
-            <img src="icons/menu.svg" alt="Menu">
+        <button class="menu-btn btn" id="menu-btn">
+            <img class="menu-icon" id="menu-icon" src="icons/menu.svg" alt="Menu">
         </button>
     </header>
 
     <nav class="nav-menu" id="nav-menu">
-        <button id="close-btn">
-            <img src="icons/close.svg" alt="Menu">
+        <button class="close-btn btn" id="close-btn">
+            <img class="close-icon" id="close-icon" src="icons/close.svg" alt="close">
         </button>
-        <ul class="hamburger" id="hamburger">
+        <ul class="nav-lists">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">My Journey</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="download">Download CV</button>
+        <button class="download btn">Download CV</button>
     </nav>
 
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-const closeBtn = document.getElementById('close-btn')
-const navMenu = document.getElementById('nav-menu');
-
-menuBtn.addEventListener('click', ()=> {
-    navMenu.classList.add('active');
-    menuBtn.style.display = 'none';
-    closeBtn.style.display = 'block';
-});
-
-
-closeBtn.addEventListener('click', ()=> {
-    navMenu.classList.remove('active');
-    closeBtn.style.display = 'none';
-    menuBtn.style.display = 'block';
-});
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
